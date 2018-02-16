@@ -1,11 +1,23 @@
-"manifest_version": 2,
-"name": "Day Starter",
-"version": ".01",
+{
+	"background": {
+		"scripts": ["js/background.js"]
+	},
+	
+	"manifest_version": 2,
+	"name": "Day Starter",
+	"version": "0.001",
 
-"defautl_locale": "en",
-"description": "This extension will take over and revamp the 'New Tab' page.",
-"icons": {},
-
-"chrome_url_overrides": {
-    "newtab": "index.html"
+	"description": "This extension will take over and revamp the 'New Tab' page.",
+	"icons": {
+		"16": "icon.png",
+		"32": "icon.png"
+	},
+	"browser_action": {
+    	"default_title": "",
+		"default_icon": "icon.png"
+  	},
+	"chrome_url_overrides": {
+	    "newtab": "index.html"
+	},
+	"permissions": ["tabs"]
 }
